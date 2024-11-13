@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online Screen Recorder</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="recording" id="recordingIndicator">RECORDING</div>
+            <h1>Online Screen Recorder</h1>
+
+            <video autoplay id="preview"></video>
+            <button id="startBtn">Start Recording</button>
+            <button disabled id="stopBtn">Stop Recording</button>
+            <a id="downloadLink" style="display: none" download="video.webm"
+                >Download</a
+            >
+            <hr />
+            <label for="micInput">Microphone:</label>
+            <select id="micInput">
+                <option selected>No microphone</option>
+            </select>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>

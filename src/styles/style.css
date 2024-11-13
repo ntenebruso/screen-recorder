@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    padding: 1em;
+    background: #fffbf5;
+}
+
+.container {
+    position: relative;
+    background: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Source Sans Pro";
+    line-height: 1;
+    margin: 0 0 5px 0;
+}
+
+button {
+    background: #ffae36;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    outline: none;
+    cursor: pointer;
+    margin: 0.3em 0;
+}
+
+.inline {
+    display: inline;
+}
+
+button:hover {
+    background: #ff9800;
+}
+
+button:active {
+    background: #ab6600;
+}
+
+button:disabled {
+    background: #c9c9c9;
+}
+
+video {
+    display: block;
+    width: 100%;
+}
+
+.recording {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: #ff2f00;
+    display: none;
+}
+
+.recording::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ff2f00;
+    vertical-align: middle;
+    margin-right: 5px;
+    animation: pulse 1.5s infinite linear;
+    border-radius: 10px;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3);
+    }
+    65% {
+        box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3);
+    }
+    90% {
+        box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0);
+    }
+}
