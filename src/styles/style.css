@@ -10,12 +10,13 @@ body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.5;
     padding: 1em;
-    background: #fffbf5;
+    background: #18181b;
+    color: #d4d4d8;
 }
 
 .container {
     position: relative;
-    background: #fff;
+    background: #27272a;
     padding: 1em;
     border-radius: 10px;
     width: 95%;
@@ -29,8 +30,17 @@ h1 {
     margin: 0 0 5px 0;
 }
 
+a,
+a:visited {
+    color: #fb923c;
+}
+
+.inline {
+    display: inline;
+}
+
 button {
-    background: #ffae36;
+    background: #fb923c;
     color: #fff;
     font-family: "Open Sans", sans-serif;
     border: none;
@@ -42,20 +52,16 @@ button {
     margin: 0.3em 0;
 }
 
-.inline {
-    display: inline;
-}
-
 button:hover {
-    background: #ff9800;
+    background: #f97316;
 }
 
 button:active {
-    background: #ab6600;
+    background: #ea580c;
 }
 
 button:disabled {
-    background: #c9c9c9;
+    background: #3f3f46;
 }
 
 video {
@@ -65,9 +71,10 @@ video {
 
 .recording {
     position: absolute;
+    font-weight: bold;
     top: 1em;
     right: 1em;
-    color: #ff2f00;
+    color: #ef4444;
     display: none;
 }
 
@@ -76,8 +83,8 @@ video {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: #ff2f00;
-    vertical-align: middle;
+    background: #ef4444;
+    vertical-align: top;
     margin-right: 5px;
     animation: pulse 1.5s infinite linear;
     border-radius: 10px;
@@ -85,12 +92,12 @@ video {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3);
+        box-shadow: 0px 0px 5px 0px rgb(239, 68, 68, 0.3);
     }
     65% {
-        box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3);
+        box-shadow: 0px 0px 5px 5px rgb(239, 68, 68, 0.3);
     }
     90% {
-        box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0);
+        box-shadow: 0px 0px 5px 5px rgb(239, 68, 68, 0);
     }
 }

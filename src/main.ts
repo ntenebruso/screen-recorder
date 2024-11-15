@@ -57,9 +57,11 @@ recorder.addEventListener("recordingStop", (e) => {
     videoPreviewElement.controls = true;
     startBtn.disabled = false;
     stopBtn.disabled = true;
-    micInput.disabled = true;
+    micInput.disabled = false;
     recordingIndicator.style.display = "none";
 
+    // TODO get rid of this
+    // @ts-ignore
     const blobURL = URL.createObjectURL(e.detail.data);
     videoPreviewElement.src = blobURL;
     downloadLink.style.display = "inline-block";
